@@ -4,19 +4,147 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta property="og:title" content="Directory" />
-    <meta property="og:description" content="Contact information." />
-    <meta property="og:image" content="chamber/images/directory_illustration.jpg" />
+    <meta property="og:title" content="Chamber Directory" />
+    <meta property="og:description" content="Find resources and contact information." />
+    <meta property="og:image" content="images/directory_illustration.jpg" />
     <meta property="og:url" content="https://avincer-coder.github.io/wdd231/chamber/directory.html" />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="stlyes/chamber.css" />
+    <link rel="stylesheet" href="stlyes/chamber_large.css" />
+    <script src="scripts/chamber.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a6e8db9a7.js" crossorigin="anonymous"></script>
 
-    <title>Directory</title>
+    <title>Chamber Directory</title>
 </head>
 
-<body></body>
+<body>
+    <nav>
+        <img src="images/atlante_small.jpg" alt="Atlante" loading="lazy"/>
+        <div class="img_pagename_box">
+            <div>
+                <h1>Tula de Allende</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div id="darkMode">
+            <!-- <i class="fa-solid fa-moon icons"></i> -->
+             <i class="fa-solid fa-sun icons"></i>
+        </div>
+        <ul>
+            <i class="fa-solid fa-bars icons"></i>
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section_hero_img">
+            <img src="images/atlantes_small.jpg" alt="atlantes" loading="lazy"/>
+        </section>
+
+        <h2>Home</h2>
+
+        <section class="section_boxes">
+            <h3>Events</h3>
+        </section>
+
+        <section class="section_boxes">
+            <h3>Current Weather</h3>
+            <div class="section_image_text_box">
+                <img src="images/weather_small.jpg" alt="weather" height="50px" loading="lazy"/>
+                <ul>
+                    <li>
+                        <p>75</p>
+                        <p>F</p>
+                    </li>
+                    <li>
+                        <p>High:</p>
+                        <p>85</p>
+                    </li>
+                    <li>
+                        <p>Low:</p>
+                        <p>52</p>
+                    </li>
+                    <li>
+                        <p>Humidity:</p>
+                        <p>34%</p>
+                    </li>
+                    <li>
+                        <p>Sunrise</p>
+                        <p>7:30am</p>
+                    </li>
+                    <li>
+                        <p>Sunset</p>
+                        <p>9:59pm</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section_boxes">
+            <h3>Weather Forecast</h3>
+            <ul>
+                <li>
+                    <p>Today:</p>
+                    <p>90 F</p>
+                </li>
+                <li>
+                    <p>Wednesday:</p>
+                    <p>89 F</p>
+                </li>
+                <li>
+                    <p>Thursday:</p>
+                    <p>68 F</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section_boxes">
+            <h4>Business Name</h4>
+            <p>Bussnies Tag Line</p>
+            <div class="section_image_text_box">
+                <div>
+                    <img src="images/directory_illustration_small.jpg" alt="directory" />
+                    <ul>
+                        <li>
+                            <p>EMAIL:</p>
+                            <p>info@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>PHONE:</p>
+                            <p>800-555-1234</p>
+                        </li>
+                        <li>
+                            <p>URL:</p>
+                            <p>mybussiness.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tula de Allende Chamber of Commerce</p>
+        <div class="footer_icons_box">
+            <i class="fa-brands fa-youtube icons"></i>
+            <i class="fa-brands fa-twitter icons"></i>
+            <i class="fa-brands fa-linkedin icons"></i>
+        </div>
+
+        <div class="footer_year_box">
+            <p>
+                <span id="currentyear"></span>
+                Mario Eduardo Garcia Salazar, Mexico
+                <img src="../images/compressed-mexico-flag-3.jpg" alt="Mexico flag" />
+                <!-- Windows: Presiona Win + . o Win + ; para abrir el selector de emojis y agregarlos opcionalmente. -->
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
 
 </html>
-
-
-<!-- C:\Universidad\programacion\wdd231\chamber\images\directory_illustration.jpg -->
