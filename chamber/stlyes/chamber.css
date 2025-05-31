@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.img_pagename_box h1{
+    margin: 0px;
+    font-size: 24px;
+}
+
+.dark_mode_box{
+    width: 30px;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -54,7 +63,6 @@ main{
     justify-content: space-around;
     width: 200px;
 }
-
 
 ul{
     list-style: none;
