@@ -1,0 +1,65 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "123 Silicon Way, San Francisco, CA",
+    "phone": "555-123-4567",
+    "website": "https://www.technova.com",
+    "image": "technova-logo.png",
+    "membershipLevel": 3,
+    "description": "Innovative software and AI solutions for modern businesses."
+  },
+  {
+    "name": "GreenLeaf Landscaping",
+    "address": "78 Garden Lane, Portland, OR",
+    "phone": "555-234-5678",
+    "website": "https://www.greenleaflandscaping.com",
+    "image": "greenleaf-icon.png",
+    "membershipLevel": 2,
+    "description": "Eco-friendly landscaping and outdoor maintenance services."
+  },
+  {
+    "name": "Bright Future Education",
+    "address": "500 Knowledge Blvd, Austin, TX",
+    "phone": "555-345-6789",
+    "website": "https://www.brightfutureedu.org",
+    "image": "brightfuture-logo.svg",
+    "membershipLevel": 1,
+    "description": "Tutoring and educational support for K-12 students."
+  },
+  {
+    "name": "MetroFit Gym",
+    "address": "2000 Energy Dr, Miami, FL",
+    "phone": "555-456-7890",
+    "website": "https://www.metrofitgym.com",
+    "image": "metrofit-logo.jpg",
+    "membershipLevel": 2,
+    "description": "24/7 fitness center with personal training and group classes."
+  },
+  {
+    "name": "Craft & Code",
+    "address": "901 Artisan Ave, Seattle, WA",
+    "phone": "555-567-8901",
+    "website": "https://www.craftandcode.dev",
+    "image": "craftcode-icon.png",
+    "membershipLevel": 3,
+    "description": "Custom website and app development for startups and creatives."
+  },
+  {
+    "name": "Ocean Breeze Spa",
+    "address": "404 Relaxation Rd, Santa Barbara, CA",
+    "phone": "555-678-9012",
+    "website": "https://www.oceanbreezespa.com",
+    "image": "oceanbreeze-logo.png",
+    "membershipLevel": 2,
+    "description": "Luxury spa treatments and wellness packages."
+  },
+  {
+    "name": "Peak Performance Consulting",
+    "address": "777 Strategy St, Chicago, IL",
+    "phone": "555-789-0123",
+    "website": "https://www.peakperformance.com",
+    "image": "peakconsulting-icon.svg",
+    "membershipLevel": 1,
+    "description": "Business consulting for productivity, leadership, and growth."
+  }
+]
