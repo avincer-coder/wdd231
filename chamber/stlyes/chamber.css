@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
-.img_pagename_box h1{
+.img_pagename_box h1 {
     margin: 0px;
     font-size: 24px;
 }
 
-.dark_mode_box{
-    width: 30px;
+.dark_mode_box {
+    margin: 0px 10px;
 }
 
-nav{
+.web_title_box {
+    margin-left: 10px;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,59 +26,166 @@ nav{
     padding: 10px 5px;
 }
 
-img{
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    width: 90vw;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: gold;
+    text-decoration: underline;
+}
+
+nav li{
+    border-bottom: 1px solid rgb(58, 57, 57);
+}
+
+img {
     border-radius: 4px;
 }
 
-.icons{
+.icons {
     font-size: 32px;
 }
 
-.icons:hover{
+.icons:hover {
     cursor: pointer;
+    color: gold;
 }
 
-main{
+main {
     margin: 5px;
 }
 
 .section_hero_img {
+    display: flex;
     justify-content: center;
 }
 
-.section_boxes{
+.section_boxes {
     border: 1px solid black;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 10px;
 }
 
-.section_boxes h3{
+.section_boxes h3 {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-.section_image_text_box, li, .img_pagename_box, .section_hero_img, .footer_icons_box, footer{
+.section_image_text_box,
+li,
+.img_pagename_box,
+.section_hero_img,
+.footer_icons_box,
+.nav_box_img_title,
+.nav_icons_box,
+footer {
     display: flex;
 }
 
-.footer_icons_box{
+.footer_icons_box {
     justify-content: space-around;
     width: 200px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-footer{
+footer {
     flex-direction: column;
     align-items: center;
     background-color: black;
     color: white;
 }
 
-footer p{
+footer p {
     width: 100%;
+}
+
+.nav_menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav_menu.active {
+    display: flex;
+    right: 0px;
+    top: 65px;
+    width: 100%;
+    background-color: black;
+    border: black;
+}
+
+.menu_toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: #121212;
+    color: rgb(196, 194, 194);
+}
+
+.menu_toggle .icons {
+    color: white;
+}
+
+.members_box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 97vw;
+    height: 100%;
+}
+
+.members-img{
+    margin-top: 10px;
+}
+
+.toggle-layout-btn {
+  display: none;
+}
+
+.list-layout-btn{
+    display: none;
+}
+
+.cards-url{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 80px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.cards-url:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.website-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
