@@ -155,6 +155,10 @@ body.dark {
     height: 100%;
 }
 
+.members-ul-box{
+    margin-top: 10px;
+}
+
 .members-img{
     margin-top: 10px;
 }
