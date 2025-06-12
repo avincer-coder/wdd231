@@ -167,6 +167,7 @@ footer p {
     width: 100%;
     background-color: black;
     border: black;
+    z-index: 9999;
 }
 
 .menu_toggle {
