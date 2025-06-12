@@ -109,7 +109,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    /* .section_boxes{
-        width: 250px;
-    } */
+
+    .hero-button{
+        top: 90%;
+        width: 150px;
+        height: 50px;
+        font-size: 26px;
+    }
 }
