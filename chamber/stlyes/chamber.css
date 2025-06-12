@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h2{
+    color: white;
+}
+
 body{
     background-color: rgba(160, 80, 6, 0.308);
 }
