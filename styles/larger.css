@@ -1,0 +1,32 @@
+@media only screen and (min-width: 27rem){
+    .parent{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .parent section, .card_certificate{
+        box-shadow: 1px 1px 10px black;
+    }
+
+    /* nav{
+        flex-direction: row;
+    } */
+     .marios-photo{
+        border-radius: 12px;
+     }
+
+    nav a{
+        flex: 1 1 100%;
+    }
+
+    .picture_name span{
+        font-size: 2rem;
+    }
+    
+    .certificate_6_links_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .picture_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 30px 0px;
+}
+
+header img{
+    margin: 0px 20px;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 5px white; */
+}
+
+.picture_name span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+body {
+    font-family: "Playwrite AU SA", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    background-color: rgb(39, 36, 36);
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    /* font-optical-sizing: auto; */
+    font-style: normal;
+    font-weight: 800;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+nav .active {
+    /* background-color: rgba(0,0,0,0.3); */
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.parent {
+    margin: 1rem 2vw;
+}
+
+.parent section {
+    border: 1px solid black;
+    border-radius: 10px;
+    /* overflow oculta las esquinas del contenedor hijo provenientes del border-radius */
+    overflow: hidden;
+}
+.card_certificate{
+    border: 1px solid black;
+    border-radius: 10px;
+    /* overflow oculta las esquinas del contenedor hijo provenientes del border-radius */
+    overflow: hidden;
+    margin: 1rem 2vw;
+}
+
+.parent h2, .h2_certificate {
+    border: 1px solid black;
+    padding: .75rem 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.parent ul,
+p {
+    padding: 10px;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin: 0 auto; alinea el main automaticamente */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.certificate_3_links_box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.certificate_3_links_box button{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.certificate_3_links_box button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.certificate_6_links_box li{
+    /* width: 100%; */
+    border: 1px solid rgb(198, 195, 195);
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* .color_110, .color_111, .color_130, .color_131{
+    background-color:rgb(215, 154, 0);
+}
+
+.color_210, .color_231{
+    background-color: rgb(230, 237, 237);
+} */
+
+.active_course{
+    background-color: rgb(215, 154, 0);
+}
+
+.inactive_course{
+    background-color: rgb(230, 237, 237);
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.figure-pachuca{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figcaption-pachuca{
+    margin: 15px 0px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.creditBox{
+    text-align: center;
+}
+
+.social{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+.social img{
+    width: 22px;
+    height: 22px;
+}
+.social a:hover{
+    background-color: rgb(57, 57, 57);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	/* margin: 0.5m; */
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
+	}
+}
+
+h2{
+	color: black;
+}
+
+
+.weeksActivities a{
+    text-decoration: underline;
+}
+
+#darkMode {
+	position: relative;
+	top: 1rem;
+	right: 0;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+
+}

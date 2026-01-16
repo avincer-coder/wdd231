@@ -1,0 +1,118 @@
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .nav_menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .fa-sun{
+        margin-right: 10px;
+        font-size: 50px;
+    }
+
+    .nav_menu.active {
+        width: auto;
+        top: auto;
+        right: auto;
+    }
+
+    .menu_toggle {
+        display: none;
+    }
+    
+    nav li{
+        border-bottom: 1px solid gold;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 0px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .members-ul-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #business-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+  .members_box {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .toggle-layout-btn {
+    display: inline-block;
+  }
+
+  .list-layout-btn{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+    }
+    .list-layout-btn:hover{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        color: black;
+        font-weight: 600;
+    }
+    
+    #business-list.list-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 760px;
+    }
+
+    #business-list.list-layout > .members_box{
+        display: flex;
+        flex-direction: row;
+    }
+     
+    #business-list.no-margin .members-img {
+         margin-top: 0;
+    }
+    .card-data-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three-sections-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .hero-button{
+        top: 90%;
+        width: 150px;
+        height: 50px;
+        font-size: 26px;
+    }
+}

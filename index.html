@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Eduardo Garcia Salazar - WDD 231 - Web Frontend Development</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development
+    Mario Eduardo Garcia Salazar course assignment home page">
+    <meta name="author" content="Mario Eduardo Garcia Salazar">
+    <meta property="og:title" content="Mario Eduardo Garcia Salazar - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://avincer-coder.github.io/wdd231/" />
+    <meta property="og:image" content="https://www.gob.mx/cms/uploads/article/main_image/56184/blog_aniv_hidalgo.jpg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <!-- <script src="scripts/navigation.js" defer></script> -->
+     <script type="module" src="scripts/navigation.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../images/favicon.ico">
+    
+    <link rel="shortcut icon" href="/PATH_TO_STATIC_FAVICON/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/PATH_TO_ANIMATED_FAVICON/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="picture_name">
+            <img src="images/laptop.svg" alt="Mario image" loading="lazy" height="100" width="75">
+            <span>WDD 231 - Web Frontend Development</span>
+            <!-- <div id="darkMode">
+                🕶️
+            </div> -->
+        </div>
+        <!-- <h2>Responsive Navigation</h2> -->
+        <button type="button" id="menu" aria-label="menu_nav"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="chamber/directory.html" title="Chamber" target="_blank">Chamber Proyect</a></li>
+                <li><a href="#" title="Final">Final Proyect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="parent">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    My name is Mario and like coding, which is why I’m studying in this field it challenges me and lets me be creative while solving problems. I enjoy learning how things work and turning ideas into something real through code. In my free time, I like to play the guitar. I’m still learning, but I enjoy practicing and improving little by little because it helps me relax and express myself in a different way. <br></br>
+                    I’m from Mexico, specifically Tlaxcala. Growing up there has shaped who I am and taught me the value of hard work and dedication. I’m proud of my roots and the culture I come from, and they motivate me to keep learning and improving as I work toward my goals.
+                </p>
+                <!-- <ul class="weeksActivities">
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                </ul> -->
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <figure class="figure-pachuca">
+                    <img class="marios-photo" src="images/MarioPhoto250x255.jpg" alt="Pachuca de Soto">
+                    <figcaption class="figcaption-pachuca">Mario Eduardo Garcia Salazar</figcaption>
+                  </figure>
+            </section>
+        </div>
+        <section class="card_certificate">
+            <h2 class="h2_certificate">Web and Computer Programming Certificate</h2>
+            <div class="certificate_3_links_box">
+                <button id="all_btn">All</button>
+                <button id="cse_btn">CSE</button>
+                <button id="wdd_btn">WDD</button>
+            </div>
+            <p id="totalCredites" class="creditBox">
+                <!-- Filled with js -->
+            </p>
+             <p>Yellow background colored are completed courses (classes taken).</p>
+            <div class="certificate_6_links_box" id="certificate_6_box">
+                <!-- Filled with js -->
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="social">
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <p>
+            <span id="currentyear"></span>
+            Mario Eduardo Garcia Salazar, Tlaxcala Mexico
+            <img src="images/compressed-mexico-flag-3.jpg" alt="Mexico flag">
+            <!-- Windows: Presiona Win + . o Win + ; para abrir el selector de emojis y agregarlos opcionalmente. -->
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "family_name": "Salazar",
+  "move_in_date": "2025-01-11",
+  "number_of_people": 4,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Juan Salazar",
+      "gender": "Male",
+      "birthdate": "2000-12-01"
+    },
+    {
+      "name": "Daniel Salazar",
+      "gender": "Male",
+      "birthdate": "1980-01-03"
+    },
+    {
+      "name": "Scarlett Salazar",
+      "gender": "Female",
+      "birthdate": "2007-10-02"
+    },
+    {
+      "name": "Ema Salazar",
+      "gender": "Female",
+      "birthdate": "2000-02-02"
+    }
+  ]
+}
