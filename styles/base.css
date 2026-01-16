@@ -36,12 +36,12 @@ body {
 p {
     font-weight: 400;
 }
-
+/* 
 h1 {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 nav {
     background-color: rgb(39, 36, 36);
@@ -279,23 +279,24 @@ footer{
 
 
 
-
+/* 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 
 h1 {
 	text-align: left;
 	font-family: times, serif;
+    font-weight: 400;
 	font-size: 1.5rem;
 	margin-left: 1rem;
 }
 
 h2 {
 	font-size: 1.2rem;
-	color: navy;
+	/* color: navy; */
 	text-align: left;
 	margin: 1rem;
 }
@@ -407,7 +408,7 @@ h2{
 	position: relative;
 	top: 1rem;
 	right: 0;
-	font-size: 3rem;
+	/* font-size: 3rem; */
 	cursor: pointer;
 	font-size: 2rem;
 
