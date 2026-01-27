@@ -5,7 +5,7 @@
 }
 
 h2{
-    color: white;
+    color: black;
 }
 
 body{
@@ -247,7 +247,7 @@ body.dark {
 .spotlights-section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .spotlights-container {
