@@ -10,6 +10,7 @@ h2{
 
 body{
     background-color: rgba(160, 80, 6, 0.308);
+    font-family: "Roboto", sans-serif;
 }
 
 .img_pagename_box h1 {
@@ -57,7 +58,6 @@ img {
 
 .icons {
     font-size: 32px;
-    font-display: swap;
 }
 
 .icons:hover {

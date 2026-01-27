@@ -11,6 +11,11 @@
     <meta property="og:image" content="https://avincer-coder.github.io/wdd231/chamber/images/tula-atlantes-wide.jpg" />
     <meta property="og:url" content="https://avincer-coder.github.io/wdd231/chamber/directory.html" />
     <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://kit.fontawesome.com">
     <link rel="preconnect" href="https://ka-f.fontawesome.com">
     <link rel="stylesheet" href="../styles/normalize.css" />
@@ -25,103 +30,39 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav_box_img_title">
-            <img src="images/atlante_small.jpg" alt="Atlante statue from Tula archaeological site" width="50" height="50" loading="lazy" />
-            <div class="img_pagename_box">
-                <div class="web_title_box">
-                    <h1>Tula de Allende</h1>
-                    <p>Directory</p>
+    <header>
+        <nav>
+            <div class="nav_box_img_title">
+                <img src="images/atlante_small.jpg" alt="Atlante statue from Tula archaeological site" width="50" height="50" loading="lazy" />
+                <div class="img_pagename_box">
+                    <div class="web_title_box">
+                        <h1>Tula de Allende</h1>
+                        <p>Directory</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="nav_icons_box">
-            <div id="darkMode" class="dark_mode_box">
-                <i class="fa-solid fa-sun icons"></i>
-            </div>
+            <div class="nav_icons_box">
+                <div id="darkMode" class="dark_mode_box">
+                    <i class="fa-solid fa-sun icons"></i>
+                </div>
 
-            <button id="menuToggle" class="menu_toggle" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars icons"></i>
-            </button>
+                <button id="menuToggle" class="menu_toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars icons"></i>
+                </button>
 
-            <ul id="navMenu" class="nav_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <main>
-        <!-- <section class="section_hero_img">
-            <picture>
-                <source media="(min-width: 768px)" srcset="images/atlantes.jpeg">
-                <img id="hero-image" src="images/atlantes_small.jpg" alt="atlantes" loading="lazy" />
-            </picture>
-        </section> -->
-
-        <!-- <h2>Home</h2>
-
-       <div class="three-sections-box">
-         <section class="section_boxes">
-            <h3>Events</h3>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-        </section>
-        <section class="section_boxes">
-            <h3>Current Weather</h3>
-            <div class="section_image_text_box">
-                <img src="images/weather_small.jpg" alt="weather" height="50px" loading="lazy" />
-                <ul>
-                    <li>
-                        <p>75</p>
-                        <p>F</p>
-                    </li>
-                    <li>
-                        <p>High:</p>
-                        <p>85</p>
-                    </li>
-                    <li>
-                        <p>Low:</p>
-                        <p>52</p>
-                    </li>
-                    <li>
-                        <p>Humidity:</p>
-                        <p>34%</p>
-                    </li>
-                    <li>
-                        <p>Sunrise</p>
-                        <p>7:30am</p>
-                    </li>
-                    <li>
-                        <p>Sunset</p>
-                        <p>9:59pm</p>
-                    </li>
+                <ul id="navMenu" class="nav_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section_boxes">
-            <h3>Weather Forecast</h3>
-            <ul>
-                <li>
-                    <p>Today:</p>
-                    <p>90 F</p>
-                </li>
-                <li>
-                    <p>Wednesday:</p>
-                    <p>89 F</p>
-                </li>
-                <li>
-                    <p>Thursday:</p>
-                    <p>68 F</p>
-                </li>
-            </ul>
-        </section> -->
-       <!-- </div> -->
+
+        </nav>
+    </header>
+
+    <main>
         <section class="card-data-section">
             <button class="list-layout-btn">Change Layout Below</button>
             <ul class="members-ul-box" id="business-list"></ul>
