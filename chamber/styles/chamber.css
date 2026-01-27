@@ -13,12 +13,12 @@ body{
 }
 
 .img_pagename_box h1 {
-    margin: 0px;
+    margin: 0;
     font-size: 24px;
 }
 
 .dark_mode_box {
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 .web_title_box {
@@ -37,7 +37,7 @@ nav {
 nav a{
     color: white;
     text-decoration: none;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 90vw;
 }
 
@@ -57,6 +57,7 @@ img {
 
 .icons {
     font-size: 32px;
+    font-display: swap;
 }
 
 .icons:hover {
@@ -193,7 +194,7 @@ body.dark {
     flex-direction: column;
     text-align: center;
     width: 97vw;
-    height: 100%;
+    min-height: 300px;
     background-color: rgba(0, 0, 0, 0.6);
 } 
 
@@ -203,6 +204,9 @@ body.dark {
 
 .members-img{
     margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .toggle-layout-btn {
@@ -233,4 +237,113 @@ body.dark {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Spotlights Section Styles */
+.spotlights-section {
+    margin: 20px 5px;
+}
+
+.spotlights-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.spotlights-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.spotlight-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+}
+
+.spotlight-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.spotlight-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.spotlight-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.spotlight-membership {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.spotlight-description {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.spotlight-contact {
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    padding-top: 15px;
+}
+
+.spotlight-contact p {
+    margin: 8px 0;
+}
+
+.spotlight-contact a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Events Section Styles */
+#events-list {
+    padding: 10px;
+}
+
+.event-item {
+    margin: 10px 0;
+    padding: 8px;
+    border-left: 3px solid gold;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.event-date {
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.event-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.event-title a:hover {
+    color: gold;
+    text-decoration: underline;
 }

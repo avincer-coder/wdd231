@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tula de Allende Chamber of Commerce - Supporting local businesses in our community" />
+    <meta name="author" content="Mario Eduardo Garcia Salazar" />
     <meta property="og:title" content="Chamber Directory" />
     <meta property="og:description" content="Find resources and contact information." />
     <meta property="og:image" content="/images/tula-atlantes-wide.jpg" />
     <meta property="og:url" content="https://avincer-coder.github.io/wdd231/chamber/directory.html" />
     <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="preconnect" href="https://ka-f.fontawesome.com">
     <link rel="stylesheet" href="../styles/normalize.css" />
-    <link rel="stylesheet" href="stlyes/chamber.css" />
-    <link rel="stylesheet" href="stlyes/chamber_large.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/chamber_large.css" />
     <link rel="icon" href="images/tula-icon.ico">
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/events.js" defer></script>
     <script src="../scripts/date.js" defer></script>
-    <script src="https://kit.fontawesome.com/3a6e8db9a7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3a6e8db9a7.js" crossorigin="anonymous" async></script>
 
     <title>Chamber Home</title>
 </head>
@@ -23,7 +29,7 @@
 <body>
     <nav>
         <div class="nav_box_img_title">
-            <img src="images/atlante_small.jpg" alt="Atlante" loading="lazy" />
+            <img src="images/atlante_small.jpg" alt="Atlante statue from Tula archaeological site" width="50" height="50" loading="lazy" />
             <div class="img_pagename_box">
                 <div class="web_title_box">
                     <h1>Tula de Allende</h1>
@@ -42,10 +48,10 @@
             </button>
 
             <ul id="navMenu" class="nav_menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </div>
 
@@ -55,7 +61,7 @@
         <section class="section_hero_img">
             <picture>
                 <source media="(min-width: 768px)" srcset="images/tula-atlantes-wide.jpg">
-                <img class="hero-image" id="hero-image" src="images/atlantes_small.jpg" alt="atlantes" loading="lazy" />
+                <img class="hero-image" id="hero-image" src="images/atlantes_small.jpg" alt="atlantes" width="800" height="450" loading="lazy" />
             </picture>
             <a target="_blank" href="#" class="hero-button">Join Now</a>
         </section>
@@ -65,38 +71,24 @@
        <div class="three-sections-box">
          <section class="section_boxes">
             <h3>Events</h3>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
+            <div id="events-list">
+                <p>Loading events...</p>
+            </div>
         </section>
         <section class="section_boxes">
             <h3>Current Weather</h3>
             <div class="section_image_text_box">
-                <img src="images/weather_small.jpg" alt="weather" height="50px" loading="lazy" />
+                <img id="weather-icon" src="images/weather_small.jpg" alt="weather" width="50" height="50" loading="lazy" />
                 <ul>
                     <li>
-                        <p>75</p>
-                        <p>F</p>
+                        <p id="current-temp">Loading...</p>
                     </li>
                     <li>
-                        <p>High:</p>
-                        <p>85</p>
-                    </li>
-                    <li>
-                        <p>Low:</p>
-                        <p>52</p>
+                        <p id="weather-desc">Loading...</p>
                     </li>
                     <li>
                         <p>Humidity:</p>
-                        <p>34%</p>
-                    </li>
-                    <li>
-                        <p>Sunrise</p>
-                        <p>7:30am</p>
-                    </li>
-                    <li>
-                        <p>Sunset</p>
-                        <p>9:59pm</p>
+                        <p id="humidity">--</p>
                     </li>
                 </ul>
             </div>
@@ -105,40 +97,42 @@
             <h3>Weather Forecast</h3>
             <ul>
                 <li>
-                    <p>Today:</p>
-                    <p>90 F</p>
+                    <p id="day1-name">Loading...</p>
+                    <p id="day1-temp">--</p>
                 </li>
                 <li>
-                    <p>Wednesday:</p>
-                    <p>89 F</p>
+                    <p id="day2-name">Loading...</p>
+                    <p id="day2-temp">--</p>
                 </li>
                 <li>
-                    <p>Thursday:</p>
-                    <p>68 F</p>
+                    <p id="day3-name">Loading...</p>
+                    <p id="day3-temp">--</p>
                 </li>
             </ul>
         </section>
        </div>
 
-        <section class="card-data-section">
-            <button class="list-layout-btn">Change Layout Below</button>
-            <ul class="members-ul-box" id="business-list"></ul>
+        <section class="spotlights-section">
+            <h2>Company Spotlights</h2>
+            <div id="spotlights-container" class="spotlights-container">
+                <!-- Spotlights will be loaded here dynamically -->
+            </div>
         </section>
     </main>
 
     <footer>
         <p>Tula de Allende Chamber of Commerce</p>
         <div class="footer_icons_box">
-            <i class="fa-brands fa-youtube icons"></i>
-            <i class="fa-brands fa-twitter icons"></i>
-            <i class="fa-brands fa-linkedin icons"></i>
+            <i class="fa-brands fa-youtube icons" aria-label="YouTube"></i>
+            <i class="fa-brands fa-twitter icons" aria-label="Twitter"></i>
+            <i class="fa-brands fa-linkedin icons" aria-label="LinkedIn"></i>
         </div>
 
         <div class="footer_year_box">
             <p>
                 <span id="currentyear"></span>
                 Mario Eduardo Garcia Salazar, Mexico
-                <img src="../images/compressed-mexico-flag-3.jpg" alt="Mexico flag" />
+                <img src="../images/compressed-mexico-flag-3.jpg" alt="Mexico flag" width="30" height="20" />
             </p>
             <p id="lastModified"></p>
         </div>
