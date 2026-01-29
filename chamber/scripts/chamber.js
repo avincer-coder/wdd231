@@ -44,7 +44,6 @@ async function displayMembers() {
       ul.appendChild(li);
     });
   } catch (error) {
-    console.error("Error:", error);
     const ul = document.getElementById("business-list");
     if (ul) {
       ul.innerHTML = "<li>Error loading data.</li>";
@@ -88,9 +87,13 @@ async function displaySpotlights() {
 
       const membershipType = business.membershipLevel === 3 ? "Gold" : "Silver";
 
+      if (!business.image ) {
+        business.image = "images/no-image-available.png";
+      }
+
       card.innerHTML = `
         <div class="spotlight-header">
-          <img src="${business.image}" alt="${business.name}" class="spotlight-img" width="80" height="80" loading="lazy">
+          <img src="${business.image}" alt="${business.name}" class="spotlight-img" loading="lazy">
           <div class="spotlight-info">
             <h3>${business.name}</h3>
             <p class="spotlight-membership">${membershipType} Member</p>
@@ -107,7 +110,6 @@ async function displaySpotlights() {
       container.appendChild(card);
     });
   } catch (error) {
-    console.error("Error:", error);
     const container = document.getElementById("spotlights-container");
     if (container) {
       container.innerHTML = "<p>Error loading spotlights.</p>";

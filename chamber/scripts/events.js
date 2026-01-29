@@ -76,7 +76,6 @@ async function displayEvents() {
       eventsContainer.appendChild(eventItem);
     });
   } catch (error) {
-    console.error("Error fetching news:", error);
     const eventsContainer = document.getElementById("events-list");
     if (eventsContainer) {
       eventsContainer.innerHTML = `

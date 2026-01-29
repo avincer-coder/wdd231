@@ -8,7 +8,6 @@ const FORECAST_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT
 async function displayCurrentWeather() {
   try {
     const response = await fetch(CURRENT_WEATHER_URL);
-    console.log(CURRENT_WEATHER_URL);
     if (!response.ok) {
       throw new Error("Weather data not available");
     }
@@ -19,8 +18,6 @@ async function displayCurrentWeather() {
     const descElement = document.getElementById("weather-desc");
     const iconElement = document.getElementById("weather-icon");
     const humidityElement = document.getElementById("humidity");
-
-    console.log(data);
 
     if (tempElement) {
       tempElement.textContent = `${Math.round(data.main.temp)}°C`;
@@ -40,7 +37,6 @@ async function displayCurrentWeather() {
       humidityElement.textContent = `${data.main.humidity}%`;
     }
   } catch (error) {
-    console.error("Error fetching current weather:", error);
     const tempElement = document.getElementById("current-temp");
     if (tempElement) {
       tempElement.textContent = "N/A";
@@ -76,7 +72,7 @@ async function displayForecast() {
       }
     });
   } catch (error) {
-    console.error("Error fetching forecast:", error);
+    // Forecast not available
   }
 }
 

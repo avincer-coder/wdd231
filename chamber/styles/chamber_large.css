@@ -2,7 +2,28 @@
     nav {
         flex-direction: row;
         justify-content: space-between;
-        padding: 15px;
+        padding: 0.9375rem 1.5rem;
+    }
+
+    /* Three sections in grid */
+    .three-sections-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .section_hero_img {
+        background-image: url('../images/tula-atlantes-wide.jpg');
+        min-height: 70vh;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
     }
 
     .nav_menu {
@@ -15,9 +36,9 @@
         border: none;
     }
 
-    .fa-sun{
-        margin-right: 10px;
-        font-size: 50px;
+    .fa-sun {
+        margin-right: var(--spacing-sm);
+        font-size: 3.125rem;
     }
 
     .nav_menu.active {
@@ -29,16 +50,23 @@
     .menu_toggle {
         display: none;
     }
+
+    /* Spotlights grid layout */
+    .spotlights-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+        gap: var(--spacing-md);
+    }
     
-    nav li{
-        border-bottom: 1px solid gold;
+    nav li {
+        border-bottom: 1px solid var(--gold);
     }
 
-    nav a{
-        color: white;
+    nav a {
+        color: var(--text-light);
         text-decoration: none;
-        padding: 10px 0;
-        width: 80px;
+        padding: var(--spacing-sm) 0;
+        width: 5rem;
         text-align: center;
     }
 
@@ -55,8 +83,8 @@
     }
 
   .members_box {
-    border: 1px solid black;
-    border-radius: 4px;
+    border: 1px solid var(--text-dark);
+    border-radius: var(--border-radius);
     width: 100%;
   }
 
@@ -64,22 +92,23 @@
     display: inline-block;
   }
 
-  .list-layout-btn{
+  .list-layout-btn {
     display: inline-block;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    height: 30px;
-    width: 200px;
-    margin-bottom: 10px;
-    }
-    .list-layout-btn:hover{
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        border: 2px solid black;
-        color: black;
-        font-weight: 600;
-    }
+    color: var(--text-light);
+    background-color: var(--bg-dark-solid);
+    border-radius: var(--spacing-xs);
+    height: 1.875rem;
+    width: 12.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .list-layout-btn:hover {
+    cursor: pointer;
+    background-color: var(--text-light);
+    border: 0.125rem solid var(--text-dark);
+    color: var(--text-dark);
+    font-weight: 600;
+  }
     
     #business-list.list-layout {
     display: flex;
