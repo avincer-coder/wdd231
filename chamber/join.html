@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tula de Allende Chamber of Commerce - Supporting local businesses in our community"
+    />
+    <meta name="author" content="Mario Eduardo Garcia Salazar" />
+    <meta property="og:title" content="Chamber Directory" />
+    <meta
+      property="og:description"
+      content="Explore trusted resources and contact details designed to help you connect quickly and move forward with confidence."
+    />
+    <meta
+      property="og:image"
+      content="https://avincer-coder.github.io/wdd231/chamber/images/tula-atlantes-wide.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://avincer-coder.github.io/wdd231/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <link rel="stylesheet" href="styles/chamber_large.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/tula-icon.ico" />
+    <title>Tula de Allende Chamber Join Page</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav_box_img_title">
+          <img
+            class="nav-logo"
+            src="images/atlante_small.jpg"
+            alt="Atlante statue from Tula archaeological site"
+            loading="lazy"
+          />
+          <div class="img_pagename_box">
+            <div class="web_title_box">
+              <h1>Tula de Allende</h1>
+              <p>Chamber of commerce</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav_icons_box">
+          <div id="darkMode" class="dark_mode_box">
+            <i class="fa-solid fa-sun icons"> </i>
+          </div>
+
+          <button id="menuToggle" class="menu_toggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars icons"></i>
+          </button>
+
+          <ul id="navMenu" class="nav_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+      <p>Tula de Allende Chamber of Commerce</p>
+      <div class="footer_icons_box">
+        <i
+          class="fa-brands fa-youtube icons"
+          role="img"
+          aria-label="YouTube"
+        ></i>
+        <i
+          class="fa-brands fa-twitter icons"
+          role="img"
+          aria-label="Twitter"
+        ></i>
+        <i
+          class="fa-brands fa-linkedin icons"
+          role="img"
+          aria-label="LinkedIn"
+        ></i>
+      </div>
+
+      <div class="footer_year_box">
+        <p>
+          <span id="currentyear"></span>
+          Mario Eduardo Garcia Salazar, Mexico
+          <img
+            class="mexico-flag"
+            src="../images/compressed-mexico-flag-3.jpg"
+            alt="Mexico flag"
+          />
+        </p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="../scripts/date.js"></script>
+  </body>
+</html>
