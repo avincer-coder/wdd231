@@ -1,0 +1,171 @@
+.section_boxes {
+  color: var(--text-light);
+  border: 1px solid var(--text-dark);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+  background-color: var(--bg-dark);
+  min-height: 18.75rem;
+}
+
+.section_boxes h3 {
+  background-color: var(--bg-dark-solid);
+  color: var(--text-light);
+  text-align: center;
+  padding: var(--spacing-sm);
+  margin: 0;
+}
+
+.section_boxes > div,
+.section_boxes > ul {
+  padding: var(--spacing-md);
+}
+
+.section_image_text_box {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.section_boxes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) 0;
+}
+
+.section_boxes ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section_boxes ul li:last-child {
+  border-bottom: none;
+}
+
+.three-sections-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.spotlights-section {
+  margin: var(--spacing-md) var(--spacing-xs);
+}
+
+.spotlights-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-dark);
+}
+
+.spotlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.spotlight-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0.125rem solid var(--gold);
+  border-radius: 0.5rem;
+  padding: var(--spacing-md);
+  color: var(--text-light);
+}
+
+.spotlight-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.spotlight-img {
+  width: 5rem;
+  height: 5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.spotlight-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--gold);
+}
+
+.spotlight-membership {
+  margin: var(--spacing-xs) 0 0 0;
+  font-size: 0.9rem;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.spotlight-description {
+  margin: 0.9375rem 0;
+  line-height: 1.6;
+}
+
+.spotlight-contact {
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  padding-top: 0.9375rem;
+}
+
+.spotlight-contact p {
+  margin: 0.5rem 0;
+}
+
+.spotlight-contact a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spotlight-contact a:hover {
+  text-decoration: underline;
+}
+
+#events-list {
+  padding: var(--spacing-sm);
+}
+
+.event-item {
+  margin: var(--spacing-sm) 0;
+  padding: 0.5rem;
+  border-left: 0.1875rem solid var(--gold);
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.event-date {
+  font-weight: bold;
+  color: var(--gold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.event-title {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.event-title a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.event-title a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+body.dark .section_boxes {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark .spotlight-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--gold);
+}
+
+body.dark .event-item {
+  background-color: rgba(255, 215, 0, 0.15);
+}

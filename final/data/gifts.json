@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Eternal Rose Crystal",
+    "category": "flowers",
+    "price": 49.99,
+    "description": "A stunning crystal rose preserved forever, symbolizing eternal love. Each petal is carefully crafted to capture the beauty of a real rose in everlasting crystal.",
+    "image": "https://i.ebayimg.com/images/g/Lh0AAOSw1Mdluoyl/s-l1200.jpg",
+    "rating": 4.8,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Heart Locket Necklace",
+    "category": "jewelry",
+    "price": 89.99,
+    "description": "A delicate gold-plated heart locket that holds two tiny photos. Keep your loved one close to your heart wherever you go.",
+    "image": "https://caitlynminimalist.com/cdn/shop/products/il_1588xN.4514695689_rco6.jpg?v=1762446267",
+    "rating": 4.9,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Luxury Chocolate Box",
+    "category": "sweets",
+    "price": 34.99,
+    "description": "An exquisite collection of 24 handcrafted Belgian chocolates in a velvet heart-shaped box. Each piece is a masterpiece of flavor.",
+    "image": "https://richpkg.com/wp-content/uploads/2024/12/Deluxe-Chocolate-Gift-Box-3.webp",
+    "rating": 4.7,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Couple's Spa Set",
+    "category": "experiences",
+    "price": 129.99,
+    "description": "A luxurious spa gift set for two, including aromatic candles, bath bombs, essential oils, and matching robes for the perfect relaxation night.",
+    "image": "https://euro-reflections.myshopify.com/cdn/shop/products/131766063_693116458265445_8350877020309241989_n_2048x.jpg?v=1608073334",
+    "rating": 4.6,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Personalized Star Map",
+    "category": "personalized",
+    "price": 59.99,
+    "description": "A custom star map showing the exact night sky from any special date and location. Frame the stars that witnessed your love story.",
+    "image": "https://thoughtbox.pk/cdn/shop/products/IMG_1754.jpg?v=1659634728",
+    "rating": 4.9,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Red Rose Bouquet (50 Roses)",
+    "category": "flowers",
+    "price": 119.99,
+    "description": "Fifty premium long-stem red roses arranged in an elegant bouquet with baby's breath and greenery. The ultimate romantic gesture.",
+    "image": "https://www.flowerchimp.com/cdn/shop/files/50-roses-scarlet-heart-1047226467_1946x.jpg?v=1768144748",
+    "rating": 4.8,
+    "featured": true
+  },
+  {
+    "id": 7,
+    "name": "Love Letter Writing Kit",
+    "category": "personalized",
+    "price": 24.99,
+    "description": "Vintage-inspired stationery set with handmade paper, wax seal, calligraphy pen, and romantic stamps. Write letters that become treasured keepsakes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5gPMtJwWKdhEILs-mKvGHIfituT9y9YVu8g&s",
+    "rating": 4.5,
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Diamond Heart Earrings",
+    "category": "jewelry",
+    "price": 199.99,
+    "description": "Stunning heart-shaped earrings set with genuine diamonds in 14k white gold. Sparkle and elegance in every reflection.",
+    "image": "https://earthlyjewels.co/cdn/shop/files/ST1026-1.jpg?v=1754042361&width=1200",
+    "rating": 5.0,
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Romantic Dinner Cruise",
+    "category": "experiences",
+    "price": 249.99,
+    "description": "A sunset dinner cruise for two with gourmet dining, live music, and champagne. Watch the city lights reflect on the water.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTusEXCaXd5sSTl0jLfQmewLHT_aSC5Ds9NAg&s",
+    "rating": 4.7,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Teddy Bear with Heart",
+    "category": "classic",
+    "price": 29.99,
+    "description": "An adorable oversized plush teddy bear holding a red satin heart with 'I Love You' embroidered in gold thread.",
+    "image": "https://i.ebayimg.com/images/g/WAoAAeSwQBxojjLB/s-l400.jpg",
+    "rating": 4.4,
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Couple's Photo Album",
+    "category": "personalized",
+    "price": 44.99,
+    "description": "A beautifully bound leather photo album with 'Our Love Story' embossed in gold. Includes 100 acid-free pages for your memories.",
+    "image": "https://a.storyblok.com/f/169502/5286x3965/e175f59a8b/fotobuch-liebe-01.jpg/m/730x0/filters:quality(85)?t=1699255918424",
+    "rating": 4.6,
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Rose Gold Bracelet",
+    "category": "jewelry",
+    "price": 79.99,
+    "description": "An elegant rose gold chain bracelet with a small heart charm engraved with your initials. Adjustable clasp for the perfect fit.",
+    "image": "https://m.media-amazon.com/images/I/6187Ni4iLoL._AC_UY1000_.jpg",
+    "rating": 4.7,
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "Scented Candle Collection",
+    "category": "classic",
+    "price": 39.99,
+    "description": "Set of five luxury soy candles in romantic scents: Rose Garden, Vanilla Dream, Jasmine Night, Lavender Bliss, and Amber Passion.",
+    "image": "https://thescentedessence.co.uk/cdn/shop/collections/TSE_Full_group-2.jpg?crop=region&crop_height=1669&crop_left=415&crop_top=0&crop_width=1669&v=1742383613&width=2500",
+    "rating": 4.5,
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Hot Air Balloon Experience",
+    "category": "experiences",
+    "price": 349.99,
+    "description": "A breathtaking sunrise hot air balloon ride for two with champagne toast and professional photography included.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6D970gpT4C1OFhst4q-l5fHUF7xpjYESfQ&s",
+    "rating": 4.9,
+    "featured": true
+  },
+  {
+    "id": 15,
+    "name": "Preserved Flower Heart Box",
+    "category": "flowers",
+    "price": 74.99,
+    "description": "Real roses preserved to last over a year, arranged in a heart-shaped velvet box. Available in red, pink, and lavender.",
+    "image": "https://img-1.kwcdn.com/product/fancy/98d954ba-bc02-4c5b-86bd-00141d1a9ca6.jpg?imageView2/2/w/1300/q/80/format/avif",
+    "rating": 4.8,
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "Couple's Matching Rings",
+    "category": "jewelry",
+    "price": 149.99,
+    "description": "A set of matching sterling silver promise rings with interlocking heart design. When placed together, they form a complete heart.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9raAAk6pv_VbhCAdlFGLaEnFLzMOM8N2rQ&s",
+    "rating": 4.8,
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Artisan Strawberry Box",
+    "category": "sweets",
+    "price": 54.99,
+    "description": "A dozen premium strawberries dipped in Belgian chocolate with decorations of white chocolate, sprinkles, and edible gold dust.",
+    "image": "https://wcwildflowers.ca/cdn/shop/files/2025-09-27_Ravensong-112_websize_1.jpg?v=1761327452&width=480",
+    "rating": 4.6,
+    "featured": false
+  },
+  {
+    "id": 18,
+    "name": "Infinity Rose Lamp",
+    "category": "classic",
+    "price": 64.99,
+    "description": "An enchanted rose inside a glass dome with warm LED fairy lights. Inspired by timeless fairy tales of everlasting love.",
+    "image": "https://i.pinimg.com/originals/c2/66/26/c26626f5f46e6cc2c33087042addbd32.jpg",
+    "rating": 4.7,
+    "featured": true
+  }
+]

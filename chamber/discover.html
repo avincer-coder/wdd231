@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tula de Allende Chamber of Commerce - Supporting local businesses in our community"
+      content="Discover Tula de Allende - Explore the rich history, culture, and attractions of our beautiful city"
     />
     <meta name="author" content="Mario Eduardo Garcia Salazar" />
-    <meta property="og:title" content="Chamber Directory" />
+    <meta property="og:title" content="Discover Tula de Allende" />
     <meta
       property="og:description"
-      content="Explore trusted resources and contact details designed to help you connect quickly and move forward with confidence."
+      content="Explore the fascinating attractions and cultural heritage of Tula de Allende"
     />
     <meta
       property="og:image"
@@ -19,14 +19,15 @@
     />
     <meta
       property="og:url"
-      content="https://avincer-coder.github.io/wdd231/chamber/index.html"
+      content="https://avincer-coder.github.io/wdd231/chamber/discover.html"
     />
     <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="styles/chamber.css" />
     <link rel="stylesheet" href="styles/chamber_large.css" />
-    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/discover.css" />
+    <link rel="stylesheet" href="styles/discover_large.css" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link
       rel="stylesheet"
@@ -36,7 +37,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="images/tula-icon.ico" />
-    <title>Tula de Allende Chamber Join Page</title>
+    <title>Discover Tula de Allende</title>
   </head>
 
   <body>
@@ -51,14 +52,14 @@
           <div class="img_pagename_box">
             <div class="web_title_box">
               <h1>Tula de Allende</h1>
-              <p>Chamber of commerce</p>
+              <p>Discover</p>
             </div>
           </div>
         </div>
 
         <div class="nav_icons_box">
           <div id="darkMode" class="dark_mode_box">
-            <i class="fa-solid fa-sun icons"> </i>
+            <i class="fa-solid fa-sun icons"></i>
           </div>
 
           <button id="menuToggle" class="menu_toggle" aria-label="Toggle Menu">
@@ -74,9 +75,19 @@
         </div>
       </nav>
     </header>
+
     <main>
-        
+      <h1 class="sr-only">Discover Tula de Allende</h1>
+      
+      <section class="visit-message-section">
+        <p id="visit-message"></p>
+      </section>
+
+      <section class="discover-section">
+        <div id="discover-cards" class="discover-grid"></div>
+      </section>
     </main>
+
     <footer>
       <p>Tula de Allende Chamber of Commerce</p>
       <div class="footer_icons_box">
@@ -99,21 +110,14 @@
 
       <div class="footer_year_box">
         <p>
-          <span id="currentyear"></span>
-          Mario Eduardo Garcia Salazar, Mexico
-          <img
-            class="mexico-flag"
-            src="../images/compressed-mexico-flag-3.jpg"
-            alt="Mexico flag"
-          />
+          &copy; <span id="currentyear"></span> | Tula de Allende Chamber of
+          Commerce
         </p>
         <p id="lastModified"></p>
       </div>
     </footer>
 
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/events.js"></script>
-    <script src="../scripts/date.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
   </body>
 </html>

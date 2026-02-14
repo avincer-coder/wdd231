@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+    .three-sections-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .spotlights-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .spotlights-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .spotlight-card {
+        flex: 1;
+        min-width: 280px;
+        max-width: 350px;
+    }
+}

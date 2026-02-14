@@ -1,0 +1,306 @@
+.collection-header {
+  text-align: center;
+  padding: 2rem 1.25rem 1rem;
+}
+
+.collection-header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.collection-header p {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.filter-section {
+  padding: 0 1.25rem 1.5rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--text-muted);
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.gifts-section {
+  padding: 0 1.25rem 3rem;
+}
+
+.gifts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.gift-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.gift-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 30px rgba(201, 169, 110, 0.15);
+}
+
+.gift-card figure {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--bg-card-hover);
+}
+
+.gift-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gift-card:hover figure img {
+  transform: scale(1.08);
+}
+
+.gift-card .card-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.gift-card-info {
+  padding: 1rem;
+}
+
+.gift-card-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.gift-card-info .card-category {
+  font-size: 0.75rem;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.gift-card-info .card-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.gift-card-info .card-rating {
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-top: 0.3rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(201, 169, 110, 0.1);
+}
+
+.view-btn {
+  font-size: 0.8rem;
+  color: var(--gold);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.view-btn:hover {
+  border-bottom-color: var(--gold);
+}
+
+.fav-toggle {
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  padding: 0.25rem;
+}
+
+.fav-toggle:hover,
+.fav-toggle.saved {
+  color: var(--red);
+  transform: scale(1.2);
+}
+
+.gift-modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background: var(--overlay);
+  border: none;
+  padding: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-modal[open] {
+  display: flex;
+}
+
+.gift-modal::backdrop {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius);
+  width: 90%;
+  max-width: 28rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalSlideUp 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.8rem;
+  color: var(--text-secondary);
+  z-index: 10;
+  transition: color var(--transition);
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--red);
+}
+
+.modal-image {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-info {
+  padding: 1.5rem;
+}
+
+.modal-info h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.modal-category {
+  font-size: 0.8rem;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+#modalRating {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.modal-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0.75rem 0;
+}
+
+.modal-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 1rem 0;
+}
+
+.fav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  border: 2px solid var(--red);
+}
+
+.fav-btn:hover {
+  background: transparent;
+  color: var(--red);
+}
+
+.fav-btn.saved {
+  background: transparent;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

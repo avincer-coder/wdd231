@@ -85,12 +85,15 @@ nav li {
 
 img {
   border-radius: var(--border-radius);
+  display: block;
 }
 
 .nav-logo {
   width: 3.125rem;
   height: 3.125rem;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-image {
@@ -98,18 +101,24 @@ img {
   max-width: 50rem;
   height: auto;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
 }
 
 #weather-icon {
   width: 3.125rem;
   height: 3.125rem;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .mexico-flag {
   width: 1.875rem;
-  height: auto;
+  height: 0.9375rem;
   aspect-ratio: 2 / 1;
+  object-fit: cover;
+  display: block;
 }
 
 .icons {
@@ -137,7 +146,7 @@ main {
   justify-content: center;
   position: relative;
   min-height: 60vh;
-  background-image: url('../images/atlantes_small.jpg');
+  background-image: url("../images/atlantes_small.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +161,11 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
   z-index: 1;
 }
 
@@ -176,42 +189,6 @@ main {
   font-size: 1.25rem;
   margin-bottom: var(--spacing-lg);
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
-}
-
-.section_boxes {
-  color: var(--text-light);
-  border: 1px solid var(--text-dark);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  margin-bottom: var(--spacing-md);
-  background-color: var(--bg-dark);
-  min-height: 18.75rem;
-}
-
-.section_boxes h3 {
-  background-color: var(--bg-dark-solid);
-  color: var(--text-light);
-  text-align: center;
-  padding: var(--spacing-sm);
-  margin: 0;
-}
-
-.section_boxes > div,
-.section_boxes > ul {
-  padding: var(--spacing-md);
-}
-
-.section_image_text_box {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-}
-
-.section_boxes li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-xs) 0;
 }
 
 .img_pagename_box {
@@ -294,14 +271,6 @@ ul {
   margin: 0;
 }
 
-.section_boxes ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.section_boxes ul li:last-child {
-  border-bottom: none;
-}
-
 footer p {
   width: 100%;
   text-align: center;
@@ -381,200 +350,6 @@ body.dark .hero-button:hover {
   border-color: var(--text-light);
 }
 
-body.dark .section_boxes {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-body.dark .spotlight-card {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: var(--gold);
-}
-
-body.dark .event-item {
-  background-color: rgba(255, 215, 0, 0.15);
-}
-
-body.dark .members_box {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
 .menu_toggle .icons {
   color: white;
-}
-
-.members_box {
-  color: var(--text-light);
-  border: 1px solid var(--text-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 18.75rem;
-  padding: var(--spacing-md);
-  background-color: var(--bg-dark);
-  gap: var(--spacing-sm);
-}
-
-.members-ul-box {
-  margin-top: var(--spacing-sm);
-}
-
-.members-img {
-  margin-top: var(--spacing-sm);
-  width: 6.25rem;
-  height: 6.25rem;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-.toggle-layout-btn {
-  display: none;
-}
-
-.list-layout-btn {
-  display: none;
-}
-
-.cards-url {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-dark-solid);
-  color: var(--text-light);
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  padding: var(--spacing-xs) var(--spacing-md);
-  transition: all 0.3s ease;
-}
-
-.cards-url:hover {
-  color: var(--text-dark);
-  background-color: var(--text-light);
-}
-
-.website-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Three sections layout */
-.three-sections-box {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-/* Spotlights Section */
-.spotlights-section {
-  margin: var(--spacing-md) var(--spacing-xs);
-}
-
-.spotlights-section h2 {
-  text-align: center;
-  margin-bottom: var(--spacing-md);
-  color: var(--text-dark);
-}
-
-.spotlights-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-.spotlight-card {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 0.125rem solid var(--gold);
-  border-radius: 0.5rem;
-  padding: var(--spacing-md);
-  color: var(--text-light);
-}
-
-.spotlight-header {
-  display: flex;
-  align-items: center;
-  gap: 0.9375rem;
-  margin-bottom: 0.9375rem;
-}
-
-.spotlight-img {
-  width: 5rem;
-  height: 5rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 0.5rem;
-  object-fit: cover;
-}
-
-.spotlight-info h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--gold);
-}
-
-.spotlight-membership {
-  margin: var(--spacing-xs) 0 0 0;
-  font-size: 0.9rem;
-  color: var(--gold);
-  font-weight: bold;
-}
-
-.spotlight-description {
-  margin: 0.9375rem 0;
-  line-height: 1.6;
-}
-
-.spotlight-contact {
-  border-top: 1px solid rgba(255, 215, 0, 0.3);
-  padding-top: 0.9375rem;
-}
-
-.spotlight-contact p {
-  margin: 0.5rem 0;
-}
-
-.spotlight-contact a {
-  color: var(--gold);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.spotlight-contact a:hover {
-  text-decoration: underline;
-}
-
-/* Events Section */
-#events-list {
-  padding: var(--spacing-sm);
-}
-
-.event-item {
-  margin: var(--spacing-sm) 0;
-  padding: 0.5rem;
-  border-left: 0.1875rem solid var(--gold);
-  background-color: rgba(255, 215, 0, 0.1);
-}
-
-.event-date {
-  font-weight: bold;
-  color: var(--gold);
-  margin-bottom: var(--spacing-xs);
-}
-
-.event-title {
-  margin: 0;
-  line-height: 1.4;
-}
-
-.event-title a {
-  color: var(--text-light);
-  text-decoration: none;
-}
-
-.event-title a:hover {
-  color: var(--gold);
-  text-decoration: underline;
 }

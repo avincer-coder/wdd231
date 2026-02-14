@@ -1,0 +1,313 @@
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #1a0f14;
+  --bg-card-hover: #2a1520;
+  --bg-nav: rgba(26, 15, 20, 0.95);
+  --red: #e63946;
+  --red-bright: #ff1744;
+  --pink: #ff6b9d;
+  --pink-light: #ffb3d0;
+  --gold: #c9a96e;
+  --gold-light: #d4b896;
+  --white: #ffffff;
+  --text-primary: #f5f0f0;
+  --text-secondary: #b8a8ae;
+  --text-muted: #7a6a70;
+  --border-gold: #c9a96e;
+  --overlay: rgba(0, 0, 0, 0.7);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Open Sans', 'Segoe UI', sans-serif;
+  --transition: 0.3s ease;
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
+  --heart-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e63946' opacity='0.45'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+body::before {
+  background-image:
+    var(--heart-svg), var(--heart-svg), var(--heart-svg),
+    var(--heart-svg), var(--heart-svg), var(--heart-svg), var(--heart-svg);
+  background-size:
+    3rem 3rem, 1.5rem 1.5rem, 4rem 4rem,
+    1.2rem 1.2rem, 2.5rem 2.5rem, 1.8rem 1.8rem, 2rem 2rem;
+  animation: floatHeartsA 13s ease-in-out infinite;
+}
+
+body::after {
+  background-image:
+    var(--heart-svg), var(--heart-svg), var(--heart-svg),
+    var(--heart-svg), var(--heart-svg), var(--heart-svg);
+  background-size:
+    2rem 2rem, 3.5rem 3.5rem, 1.4rem 1.4rem,
+    2.8rem 2.8rem, 1rem 1rem, 2.2rem 2.2rem;
+  animation: floatHeartsB 15s ease-in-out 5s infinite;
+}
+
+main, header, footer {
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg-nav);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 1001;
+}
+
+.logo-heart {
+  font-size: 1.5rem;
+  color: var(--red);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+  padding: 0.25rem;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 2px;
+  background: var(--gold);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-nav);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+.nav-menu.show {
+  transform: translateY(0);
+}
+
+.nav-menu li a {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  padding: 0.5rem 1.5rem;
+  transition: color var(--transition);
+  position: relative;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: var(--red);
+}
+
+.nav-menu li a.active::after {
+  content: '\2665';
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: var(--red);
+}
+
+main {
+  padding-top: 4rem;
+}
+
+footer {
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: var(--red);
+  transform: translateY(-2px);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-modified {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.15); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.1); }
+  60% { transform: scale(1); }
+}
+
+@keyframes floatHeartsA {
+  0% {
+    background-position:
+      5% 115%, 22% 135%, 38% 110%,
+      52% 130%, 66% 140%, 80% 118%, 93% 128%;
+    opacity: 0;
+  }
+  12% { opacity: 1; }
+  85% { opacity: 0.6; }
+  100% {
+    background-position:
+      5% -20%, 22% -40%, 38% -15%,
+      52% -35%, 66% -45%, 80% -22%, 93% -32%;
+    opacity: 0;
+  }
+}
+
+@keyframes floatHeartsB {
+  0% {
+    background-position:
+      10% 122%, 28% 140%, 44% 112%,
+      58% 135%, 74% 115%, 90% 130%;
+    opacity: 0;
+  }
+  12% { opacity: 1; }
+  85% { opacity: 0.6; }
+  100% {
+    background-position:
+      10% -25%, 28% -45%, 44% -18%,
+      58% -38%, 74% -20%, 90% -32%;
+    opacity: 0;
+  }
+}

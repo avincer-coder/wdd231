@@ -1,0 +1,43 @@
+@media only screen and (min-width: 641px) {
+  .gifts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content {
+    max-width: 36rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .gifts-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gift-card figure img {
+    transition: transform 0.5s ease;
+  }
+
+  .gift-card:hover figure img {
+    transform: scale(1.08);
+  }
+
+  .modal-content {
+    max-width: 50rem;
+  }
+
+  .modal-body {
+    display: flex;
+  }
+
+  .modal-image {
+    flex: 1;
+    aspect-ratio: auto;
+    min-height: 20rem;
+  }
+
+  .modal-info {
+    flex: 1;
+    padding: 2rem;
+  }
+}

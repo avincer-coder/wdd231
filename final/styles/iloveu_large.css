@@ -1,0 +1,15 @@
+@media only screen and (min-width: 641px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .favorites-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wishlist-section {
+    max-width: 40rem;
+  }
+}

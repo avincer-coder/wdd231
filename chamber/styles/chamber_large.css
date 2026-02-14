@@ -5,13 +5,6 @@
         padding: 0.9375rem 1.5rem;
     }
 
-    /* Three sections in grid */
-    .three-sections-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--spacing-md);
-    }
-
     .section_hero_img {
         background-image: url('../images/tula-atlantes-wide.jpg');
         min-height: 70vh;
@@ -50,13 +43,6 @@
     .menu_toggle {
         display: none;
     }
-
-    /* Spotlights grid layout */
-    .spotlights-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-        gap: var(--spacing-md);
-    }
     
     nav li {
         border-bottom: 1px solid var(--gold);
@@ -70,92 +56,10 @@
         text-align: center;
     }
 
-    .members-ul-box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #business-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-
-  .members_box {
-    border: 1px solid var(--text-dark);
-    border-radius: var(--border-radius);
-    width: 100%;
-  }
-
-  .toggle-layout-btn {
-    display: inline-block;
-  }
-
-  .list-layout-btn {
-    display: inline-block;
-    color: var(--text-light);
-    background-color: var(--bg-dark-solid);
-    border-radius: var(--spacing-xs);
-    height: 1.875rem;
-    width: 12.5rem;
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .list-layout-btn:hover {
-    cursor: pointer;
-    background-color: var(--text-light);
-    border: 0.125rem solid var(--text-dark);
-    color: var(--text-dark);
-    font-weight: 600;
-  }
-    
-    #business-list.list-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 760px;
-    }
-
-    #business-list.list-layout > .members_box{
-        display: flex;
-        flex-direction: row;
-    }
-     
-    #business-list.no-margin .members-img {
-         margin-top: 0;
-    }
-    .card-data-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .three-sections-box{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-
-    .hero-button{
+    .hero-button {
         top: 90%;
         width: 150px;
         height: 50px;
         font-size: 26px;
-    }
-
-    /* Spotlights responsive layout */
-    .spotlights-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        flex-wrap: wrap;
-    }
-
-    .spotlight-card {
-        flex: 1;
-        min-width: 280px;
-        max-width: 350px;
     }
 }

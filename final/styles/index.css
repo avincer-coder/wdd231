@@ -1,0 +1,162 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.25rem 1rem;
+  min-height: calc(100vh - 4rem);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1.1;
+  text-shadow: 0 0 30px rgba(230, 57, 70, 0.4);
+}
+
+.hero-image-frame {
+  position: relative;
+  width: 17rem;
+  aspect-ratio: 320 / 300;
+  margin: 1rem auto;
+  overflow: visible;
+}
+
+.heart-svg {
+  position: absolute;
+  inset: -0.5rem;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.heart-frame {
+  position: absolute;
+  inset: 0;
+  clip-path: url(#heartClip);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heart-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, var(--red), var(--red-bright));
+  color: var(--white);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 2.5rem;
+  border-radius: 3rem;
+  transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(230, 57, 70, 0.4);
+  border: 2px solid transparent;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(230, 57, 70, 0.6);
+  border-color: var(--gold);
+}
+
+.cta-arrow {
+  font-style: normal;
+  transition: transform var(--transition);
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+.poems-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 1.25rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  min-height: 6rem;
+}
+
+.poem-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.6;
+  min-height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.poem-nav {
+  font-size: 1.2rem;
+  color: var(--gold);
+  padding: 0.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.poem-nav:hover {
+  background: var(--gold);
+  color: var(--bg-dark);
+}
+
+.love-box {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+}
+
+.love-box-inner {
+  border: 2px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  background: var(--bg-card);
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.15);
+}
+
+.love-message {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 400;
+}

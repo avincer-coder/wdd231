@@ -3,19 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kaiya - A romantic Valentine's Day gift collection celebrating love with curated gifts, experiences, and heartfelt surprises for your special someone." />
+  <meta name="description" content="Thank you for sending your Valentine's Day love message through Kaiya." />
   <meta name="author" content="Mario Eduardo Garcia Salazar" />
-  <meta property="og:title" content="Kaiya - Valentine's Day Love Collection" />
-  <meta property="og:description" content="Discover the perfect Valentine's Day gifts to celebrate love. Curated collections of flowers, jewelry, experiences, and personalized treasures." />
-  <meta property="og:url" content="https://avincer-coder.github.io/wdd231/final/index.html" />
-  <meta property="og:type" content="website" />
   <link rel="icon" href="images/heart-icon.ico" />
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/kaiya.css" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/thankyou.css" />
   <link rel="stylesheet" href="styles/kaiya_large.css" />
-  <link rel="stylesheet" href="styles/index_large.css" />
-  <title>Kaiya | Valentine's Day</title>
+  <title>Message Sent | Kaiya</title>
 </head>
 <body>
 
@@ -33,7 +28,7 @@
       </button>
 
       <ul id="navMenu" class="nav-menu">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="collection.html">Collection</a></li>
         <li><a href="iloveu.html">I Love U</a></li>
       </ul>
@@ -41,52 +36,18 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="hero-subtitle">Do you want to be...</p>
-        <h1 class="hero-title">My Valentine?</h1>
-      </div>
+    <section class="thankyou-section">
+      <div class="thankyou-card">
+        <span class="thankyou-heart" aria-hidden="true">&#10084;</span>
+        <h1>Message Sent!</h1>
+        <p class="thankyou-subtitle">Your love is on its way</p>
 
-      <div class="hero-image-frame">
-        <svg class="heart-svg" viewBox="-15 -15 330 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <filter id="borderGlow">
-              <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#e63946" flood-opacity="0.35"/>
-            </filter>
-            <clipPath id="heartClip" clipPathUnits="objectBoundingBox">
-              <path d="M0.5 0.82 C0.46 0.77 0.15 0.6 0.15 0.37 C0.15 0.2 0.25 0.12 0.35 0.12 C0.43 0.12 0.48 0.17 0.5 0.21 C0.52 0.17 0.57 0.12 0.65 0.12 C0.75 0.12 0.85 0.2 0.85 0.37 C0.85 0.6 0.54 0.77 0.5 0.82Z"/>
-            </clipPath>
-          </defs>
-          <path d="M150 272 C136 254 6 190 6 95 C6 30 46 -4 88 -4 C120 -4 142 18 150 34 C158 18 180 -4 212 -4 C254 -4 294 30 294 95 C294 190 164 254 150 272Z"
-                fill="none" stroke="#c9a96e" stroke-width="2.5" filter="url(#borderGlow)"/>
-          <path d="M150 252 C140 238 28 180 28 100 C28 42 62 18 96 18 C124 18 144 34 150 48 C156 34 176 18 204 18 C238 18 272 42 272 100 C272 180 160 238 150 252Z"
-                fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/>
-          <path d="M150 252 C140 238 28 180 28 100 C28 42 62 18 96 18 C124 18 144 34 150 48 C156 34 176 18 204 18 C238 18 272 42 272 100 C272 180 160 238 150 252Z"
-                fill="rgba(140,10,20,0.3)" stroke="none"/>
-        </svg>
-        <div class="heart-frame">
-          <img id="heroImage" src="images/hero/hero-1.jpg" alt="Romantic couple celebrating Valentine's Day" loading="eager" width="600" height="600" />
+        <div id="formSummary" class="form-summary">
         </div>
-      </div>
 
-      <a href="collection.html" class="cta-button">
-        <span class="cta-text">Yes I do!</span>
-        <span class="cta-arrow">&#10140;</span>
-      </a>
-    </section>
-
-    <section class="poems-section">
-      <button id="poemPrev" class="poem-nav" aria-label="Previous poem">&#10094;</button>
-      <p id="poemText" class="poem-text"></p>
-      <button id="poemNext" class="poem-nav" aria-label="Next poem">&#10095;</button>
-    </section>
-
-    <section class="love-box">
-      <div class="love-box-inner">
-        <p class="love-message">Te amo Jane</p>
+        <a href="index.html" class="back-btn">&#10094; Back to Home</a>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -109,6 +70,6 @@
   </footer>
 
   <script type="module" src="scripts/main.js"></script>
-  <script type="module" src="scripts/index.js"></script>
+  <script type="module" src="scripts/thankyou.js"></script>
 </body>
 </html>
